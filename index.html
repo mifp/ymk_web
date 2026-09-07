@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101311">
+    <meta name="description" content="YMK forbinder mennesker, systemer og data. Uafhængig rådgivning og udvikling inden for arkitektur, sundheds-it, IoT, cloud og identitet.">
+    <title>YMK — Det hele hænger sammen</title>
+    <script>
+      try { document.documentElement.dataset.theme = localStorage.getItem('ymk_v6_theme') || 'signal'; } catch {}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="importmap">
+      { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Spring til indhold</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="YMK — forsiden">ymk<span class="brand-dot">®</span></a>
+        <span class="brand-caption">Ydelse. Mennesker. Kvalitet.</span>
+        <nav class="header-nav" aria-label="Hovednavigation">
+          <a href="#arch">Kompetencer</a>
+          <a href="#approach">Vores tilgang</a>
+          <a class="contact-link" href="#contact">Lad os tale <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="content" class="experience">
+        <div class="scene-stage" id="sceneStage">
+          <canvas id="scene" aria-label="Interaktivt system af forbindelser. Træk for at rotere. Vælg en kompetence nedenfor for at udforske." role="img"></canvas>
+          <div class="scene-labels" id="sceneLabels" aria-label="Udforsk systemet"></div>
+          <div class="scene-caption" aria-hidden="true"><span class="status-dot"></span> SYSTEMER I SAMSPIL <span class="caption-divider">/</span> <span id="sceneCounter">01—06</span></div>
+          <p class="scene-note" id="sceneNote">Et fælles system. Seks perspektiver.</p>
+          <div class="scene-coordinates" aria-hidden="true"><span>YMK / CONNECTED SYSTEMS</span><span>ARKITEKTUR · DATA · MENNESKER</span></div>
+        </div>
+
+        <div class="content-wrap">
+          <section class="content-panel hero-panel" id="home" data-panel="home" aria-labelledby="homeTitle">
+            <p class="eyebrow"><span class="small-line"></span> TEKNOLOGI MED SAMMENHÆNG</p>
+            <h1 id="homeTitle">Det hele<br>hænger<br><em>sammen.</em></h1>
+            <p class="intro">Vi forbinder mennesker, systemer og data.<br>Fra den første arkitekturskitse til det,<br class="desktop-break"> der skal virke hver dag.</p>
+            <a class="primary-link" href="#arch">Udforsk forbindelserne <span class="arrow-disc" aria-hidden="true">↗</span></a>
+            <div class="hero-footnote"><span class="status-dot"></span> UAFHÆNGIG TEKNOLOGIPARTNER · DANMARK</div>
+          </section>
+
+          <section class="content-panel detail-panel" id="arch" data-panel="arch" aria-labelledby="archTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">01 / ARKITEKTUR</p>
+            <h2 id="archTitle">Overblik før<br><em>kompleksitet.</em></h2>
+            <p class="intro">En god arkitektur gør det lettere at træffe de næste beslutninger. Vi tegner sammenhængen mellem forretning, data og teknologi.</p>
+            <ul class="deliverables"><li>Målbilleder og capability maps</li><li>Data- og sikkerhedsstrømme fra ende til ende</li><li>Arkitekturreviews, ADR'er og klare roadmaps</li></ul>
+            <a class="text-link" href="#contact">Lad os skabe overblikket <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="fhir" data-panel="fhir" aria-labelledby="fhirTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">02 / SUNDHEDS-IT</p>
+            <h2 id="fhirTitle">Data med<br><em>betydning.</em></h2>
+            <p class="intro">Information skal kunne følge patienten. Vi forbinder journaler og omsorgssystemer med klare aftaler om data og ansvar.</p>
+            <ul class="deliverables"><li>FHIR/HL7 og tydelige integrationskontrakter</li><li>EPJ, omsorgssystemer og HealthConnect</li><li>FLO/FLT, FDC og bridges med sporbarhed</li></ul>
+            <a class="text-link" href="#contact">Tal med os om integration <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="iot" data-panel="iot" aria-labelledby="iotTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">03 / INTERNET OF THINGS</p>
+            <h2 id="iotTitle">Fra sensor<br><em>til indsigt.</em></h2>
+            <p class="intro">Den fysiske verden har noget at fortælle. Vi får enheder, telemetri og datapipelines til at hænge sammen med jeres forretning.</p>
+            <ul class="deliverables"><li>Enheder og dataindsamling i drift</li><li>Pipelines fra sensor til cloud og journal</li><li>Overvågning og tidlig fejlhåndtering</li></ul>
+            <a class="text-link" href="#contact">Forbind den fysiske verden <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="cloud" data-panel="cloud" aria-labelledby="cloudTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">04 / CLOUD & PLATFORM</p>
+            <h2 id="cloudTitle">Bygget til<br><em>hverdagen.</em></h2>
+            <p class="intro">Det skal også fungere efter lanceringen. Vi bygger platforme, hvor leverance, drift og kvalitet er en del af samme tanke.</p>
+            <ul class="deliverables"><li>Kubernetes, containere og CI/CD</li><li>SLO'er, metrics og sporbarhed</li><li>Runbooks, dokumentation og overlevering</li></ul>
+            <a class="text-link" href="#contact">Tal med os om jeres platform <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="identity" data-panel="identity" aria-labelledby="identityTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">05 / IDENTITET & ADGANG</p>
+            <h2 id="identityTitle">Tillid i hver<br><em>forbindelse.</em></h2>
+            <p class="intro">Den rette adgang skal være enkel at bruge og mulig at forklare. Vi tænker identitet ind i arkitekturen fra begyndelsen.</p>
+            <ul class="deliverables"><li>Entra ID og fælles login med OIDC/SAML</li><li>Roller, rettigheder og adgangsmønstre</li><li>MSAL og identitet på tværs af systemer</li></ul>
+            <a class="text-link" href="#contact">Skab en sikker sammenhæng <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="people" data-panel="people" aria-labelledby="peopleTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">06 / SAMARBEJDE</p>
+            <h2 id="peopleTitle">Fælles retning.<br><em>Bedre systemer.</em></h2>
+            <p class="intro">Teknologi lykkes, når mennesker kan arbejde sammen. Vi bygger bro mellem forretning, udvikling og drift.</p>
+            <ul class="deliverables"><li>Facilitering på tværs af fagligheder</li><li>Beslutninger med kontekst og ejerskab</li><li>Mentorering og klare leveranceaftaler</li></ul>
+            <a class="text-link" href="#contact">Find den fælles retning <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel" id="approach" data-panel="approach" aria-labelledby="approachTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">VORES TILGANG</p>
+            <h2 id="approachTitle">Fra overblik<br><em>til virkelighed.</em></h2>
+            <p class="intro">Vi tager ansvar for sammenhængen. Også dér, hvor én leverandørs løsning stopper, og en andens begynder.</p>
+            <ol class="approach-list"><li><span>01</span><div><strong>Forstå helheden</strong><p>Mennesker, behov og de systemer, I allerede har.</p></div></li><li><span>02</span><div><strong>Byg forbindelserne</strong><p>Klare kontrakter. Små leverancer. Fælles retning.</p></div></li><li><span>03</span><div><strong>Få det til at holde</strong><p>Sporbar drift og viden, der bliver hos jer.</p></div></li></ol>
+            <a class="text-link" href="#contact">Hvor skal vi begynde? <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="content-panel detail-panel contact-panel" id="contact" data-panel="contact" aria-labelledby="contactTitle" hidden>
+            <a href="#home" class="back-link">← Hele systemet</a>
+            <p class="eyebrow">DEN NÆSTE FORBINDELSE</p>
+            <h2 id="contactTitle">Det begynder<br><em>med en samtale.</em></h2>
+            <p class="intro">Et nyt projekt. En kompleks integration.<br>Eller et spørgsmål, der fortjener et bedre svar.<br>Fortæl os, hvad I står med.</p>
+            <a class="email-link" href="mailto:hello@ymk.dk">hello@ymk.dk <span aria-hidden="true">↗</span></a>
+            <div class="contact-actions"><button id="copyEmail" type="button">Kopiér e-mail <span aria-hidden="true">⧉</span></button><a href="https://www.linkedin.com/in/michael-friis-præstmark" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+            <p class="contact-signature">YMK — Ydelse. Mennesker. Kvalitet.</p>
+          </section>
+        </div>
+
+        <div class="scene-tools" id="sceneTools" hidden>
+          <span class="drag-hint"><span aria-hidden="true">↔</span> Træk for at rotere</span>
+          <button id="resetScene" class="tool-button" type="button" aria-label="Nulstil 3D-visning" title="Nulstil visning">↺</button>
+          <button id="pauseScene" class="tool-button" type="button" aria-label="Sæt animation på pause" aria-pressed="false" title="Sæt animation på pause"><span id="pauseIcon" aria-hidden="true">Ⅱ</span></button>
+        </div>
+      </main>
+
+      <nav class="service-nav" aria-label="Kompetencer">
+        <a href="#arch" data-service="arch"><span class="service-number">01</span><span>Arkitektur</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+        <a href="#fhir" data-service="fhir"><span class="service-number">02</span><span>Sundheds-it</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+        <a href="#iot" data-service="iot"><span class="service-number">03</span><span>IoT</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+        <a href="#cloud" data-service="cloud"><span class="service-number">04</span><span>Cloud</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+        <a href="#identity" data-service="identity"><span class="service-number">05</span><span>Identitet</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+        <a href="#people" data-service="people"><span class="service-number">06</span><span>Samarbejde</span><span class="service-arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <footer class="site-footer">
+        <span>© <span id="year">2026</span> YMK</span>
+        <label class="theme-picker" for="themeSelect">
+          <span class="theme-swatch" aria-hidden="true"></span>
+          <span class="sr-only">Farvetema</span>
+          <select id="themeSelect">
+            <option value="signal">Signal</option>
+            <option value="tide">Hav</option>
+            <option value="copper">Kobber</option>
+            <option value="iris">Iris</option>
+            <option value="mono">Mono</option>
+          </select>
+          <span class="theme-chevron" aria-hidden="true">⌃</span>
+        </label>
+        <a href="mailto:hello@ymk.dk">hello@ymk.dk <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+    <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+    <noscript><style>.content-panel[hidden]{display:block!important}.content-wrap{position:relative}.content-panel{padding-bottom:4rem}.scene-stage,.scene-tools,.theme-picker{display:none}.experience{height:auto!important}.content-wrap{width:100%;max-width:800px}.service-nav{display:none}</style></noscript>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
